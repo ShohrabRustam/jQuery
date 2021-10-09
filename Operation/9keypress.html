@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyPress() </title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<h1>keypress() </h1>
+Name:
+<input type="text" name="Name" placeholder="Full Name ">
+<button id="Name">Done</button>
+Mobile no:
+<input type="number" name="Mobile No" placeholder="99xxxxxxxx">
+<button id="Number">Done</button>
+
+<p>$("input").keypress(function(){console.log("you Press the key ")})</p>
+$("input").keypress(function(event){if (event.which===13){alert("You hit Enter!")}})
+</body>
+</html>

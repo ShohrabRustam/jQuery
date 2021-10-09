@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events in jQuery</title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<h1>Events in jQuery</h1>
+<ol><b>Three Events which is commonly and most use</b>
+<li>click()</li>
+<li>keypress()</li>
+<li><b>On()</b></li>
+</ol>  
+<button>Do't click me</button>
+<button>Seliously Do.t click me </button>
+<button>This is the last warning </button>
+<h3>Solution </h3>
+<p>$("h1").click(function (){ alert("Heading Clicked!");});</p>
+<p>$("button").click(function (){ alert("Button Clicked!");});</p>
+<p>$("button").click(function (){$(this).css("color","red");});</p>
+</body>
+</html>
